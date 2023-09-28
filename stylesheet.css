@@ -22,7 +22,7 @@ html, body {
   position: relative;
   left: auto;
   animation-name: example ;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 
 }

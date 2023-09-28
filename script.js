@@ -1,4 +1,5 @@
 function makeQuoteButton() {
+    const btn = document.createElement()
     const quoteBtn = document.createElement('button');
     quoteBtn.classList.add('button')
     quoteBtn.textContent = 'Click Me';
@@ -21,7 +22,7 @@ function makeQuote(data) {
     setTimeout(function() {
         document.body.removeChild(popup)
         makeQuoteButton()
-    }, 10000)
+    }, 5000)
     popup.append(quote);
     document.body.append(popup)
 }
