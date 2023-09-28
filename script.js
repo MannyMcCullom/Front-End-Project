@@ -1,5 +1,5 @@
 function makeQuoteButton() {
-    const btn = document.createElement()
+    // const btn = document.createElement();
     const quoteBtn = document.createElement('button');
     quoteBtn.classList.add('button')
     quoteBtn.textContent = 'Click Me';
