@@ -26,7 +26,7 @@ function makeQuote(data) {
 }
 
 function quoteGenerate(){
-    $.get("http://www.boredapi.com/api/activity?type=relaxation", (data) => {
+    $.get("https://www.boredapi.com/api/activity?type=relaxation", (data) => {
         makeQuote(data);
     })}
 
