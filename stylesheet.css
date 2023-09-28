@@ -11,15 +11,6 @@ html, body {
     align-items: center;
   }
 
-.words {
-    font-size: 100%;
-    transition: height 2s;
-}
-
-.words:before{
-  height: 150px;
-}
-
 .button {
   /* position:fixed; */
   bottom:100px;
@@ -29,36 +20,20 @@ html, body {
   border-color: yellow;
   border-radius: 5px;
   position: relative;
+  left: auto;
   animation-name: example ;
   animation-duration: 10s;
+  animation-iteration-count: infinite;
+
 }
 
 @keyframes example {
   0%   {left:0px; top:0px;}
-  20%   {left:10px; top:90px;}
-  40%   {left:0px; top:0px;}
-  60%   {left:0px; top:0px;}
-  80%   {left:0px; top:0px;}
-  100%   {left:0px; top:0px;}
+  20%   {left:100px; top:-100px;}
+  40%   {left:-250px; top:250px;}
+  60%   {left:12px; top:-26px;}
+  80%   {left:-78px; top:-163px;}
+  100%   {left:0px; top:-10px;}
 
 }
 
-/* .button:hover {
-  /* height: 150px; */
-  
-/* } */ 
-
-.floor {
-    height: 50px;
-    width: 800px;
-    background-color: lightblue;
-    border-style: solid;
-    border-color: yellow;
-    border-radius: 5px;
-    /* margin-bottom: 100%; */
-    transition: height 2s;
-}
-
-.button:hover{
-  /* height: 400px; */
-}
