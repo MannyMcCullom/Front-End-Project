@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    background-color: black;
   }
 
   body {
@@ -12,15 +13,52 @@ html, body {
 
 .words {
     font-size: 100%;
+    transition: height 2s;
 }
 
-#popupContainer {
-    display: flex;
-    flex-wrap: wrap;
-    /* width: 400px; */
-    /* height: 200px; */
-    padding: 5px;
-    background-color: aqua;
-    justify-content: center;
-    align-items: center;
+.words:before{
+  height: 150px;
+}
+
+.button {
+  /* position:fixed; */
+  bottom:100px;
+  height: 50px;
+  background-color: lightblue;
+  border-style: solid;
+  border-color: yellow;
+  border-radius: 5px;
+  position: relative;
+  animation-name: example ;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  20%   {left:10px; top:90px;}
+  40%   {left:0px; top:0px;}
+  60%   {left:0px; top:0px;}
+  80%   {left:0px; top:0px;}
+  100%   {left:0px; top:0px;}
+
+}
+
+/* .button:hover {
+  /* height: 150px; */
+  
+/* } */ 
+
+.floor {
+    height: 50px;
+    width: 800px;
+    background-color: lightblue;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 5px;
+    /* margin-bottom: 100%; */
+    transition: height 2s;
+}
+
+.button:hover{
+  /* height: 400px; */
 }
